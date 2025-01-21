@@ -7,3 +7,6 @@ export const API_OPTIONS = {
   method: "GET",
   headers: { accept: "application/json", Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlMmFhNGFiOTUyZmExZTZmNDg0MWYyNGY3ZmIxODNlYSIsIm5iZiI6MTczNzA1MDYzNC4wNSwic3ViIjoiNjc4OTRhMDkxNDAzNzAxYzk5MWQ1ZmQ4Iiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.YpeDMfjeskDlO45qm-hqU62w0EyYFfdX4NLMRBP4w3I" },
 };
+
+export const IMG_CDN = "https://image.tmdb.org/t/p/w500/"
+
