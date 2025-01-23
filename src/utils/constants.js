@@ -10,3 +10,11 @@ export const API_OPTIONS = {
 
 export const IMG_CDN = "https://image.tmdb.org/t/p/w500/"
 
+
+export const BANNER_IMG = "https://assets.nflxext.com/ffe/siteui/vlv3/154a9550-ce07-4e28-819c-63185dd849f8/web/US-en-20250106-TRIFECTA-perspective_65e335d4-6f1e-4d03-8daa-e439fbaaa340_large.jpg"
+
+export const SUPPORTED_LANG = [
+  {identifier : "english", name : "English"},
+  {identifier : "telugu", name: "Telugu"},
+  {identifier : "spanish", name : "Spanish"}
+]
