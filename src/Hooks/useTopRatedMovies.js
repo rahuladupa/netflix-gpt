@@ -4,6 +4,9 @@ import { useEffect } from "react";
 import { API_OPTIONS } from "../utils/constants";
 
 const useTopRatedMovies = () =>{
+
+
+  
 const dispatch = useDispatch();
 
 

@@ -18,3 +18,6 @@ export const SUPPORTED_LANG = [
   {identifier : "telugu", name: "Telugu"},
   {identifier : "spanish", name : "Spanish"}
 ]
+
+export const OPEN_API_KEY = "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"
+// export const OPEN_API_KEY = "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"
