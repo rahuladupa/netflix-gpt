@@ -5,7 +5,7 @@ import GptSearchBar from "./GptSearchBar"
 const GptSearch = () => {
   return (
     <div>
-        <div className="absolute  bg-opacity-80 -z-10">
+        <div className="fixed  bg-opacity -z-10">
         <img
           className=" brightness-50"
           src={BANNER_IMG}

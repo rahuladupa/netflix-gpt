@@ -5,19 +5,21 @@ export const USER_AVATAR =
 
 export const API_OPTIONS = {
   method: "GET",
-  headers: { accept: "application/json", Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlMmFhNGFiOTUyZmExZTZmNDg0MWYyNGY3ZmIxODNlYSIsIm5iZiI6MTczNzA1MDYzNC4wNSwic3ViIjoiNjc4OTRhMDkxNDAzNzAxYzk5MWQ1ZmQ4Iiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.YpeDMfjeskDlO45qm-hqU62w0EyYFfdX4NLMRBP4w3I" },
+  headers: {
+    accept: "application/json",
+    Authorization: "Bearer "+ process.env.REACT_APP_TMDB_KEY,
+  },
 };
+export const IMG_CDN = "https://image.tmdb.org/t/p/w500/";
 
-export const IMG_CDN = "https://image.tmdb.org/t/p/w500/"
-
-
-export const BANNER_IMG = "https://assets.nflxext.com/ffe/siteui/vlv3/154a9550-ce07-4e28-819c-63185dd849f8/web/US-en-20250106-TRIFECTA-perspective_65e335d4-6f1e-4d03-8daa-e439fbaaa340_large.jpg"
+export const BANNER_IMG =
+  "https://assets.nflxext.com/ffe/siteui/vlv3/154a9550-ce07-4e28-819c-63185dd849f8/web/US-en-20250106-TRIFECTA-perspective_65e335d4-6f1e-4d03-8daa-e439fbaaa340_large.jpg";
 
 export const SUPPORTED_LANG = [
-  {identifier : "english", name : "English"},
-  {identifier : "telugu", name: "Telugu"},
-  {identifier : "spanish", name : "Spanish"}
-]
+  { identifier: "english", name: "English" },
+  { identifier: "telugu", name: "Telugu" },
+  { identifier: "spanish", name: "Spanish" },
+];
 
-export const OPEN_API_KEY = "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"
+export const OPEN_API_KEY = process.env.REACT_APP_OPEN_API_KEY;
 // export const OPEN_API_KEY = "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"

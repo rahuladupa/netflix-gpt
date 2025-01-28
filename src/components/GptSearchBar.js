@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { language } from "../utils/languageConstants";
 import { useEffect, useRef } from "react";
-import openai from "../utils/openai";
 import { API_OPTIONS } from "../utils/constants";
 import { addGptMovieResults } from "../utils/gptSlice";
 
@@ -39,10 +38,11 @@ const GptSearchBar = () => {
       const movieArray = json.results.map((movie) => movie.title);
   
       const promiseArray = movieArray.map((movie) => searchMovieTMDB(movie));
+      // console.log("PromiseArray", promiseArray)
       const tmdbResults = await Promise.all(promiseArray);
-  
+  const gptMovies = tmdbResults.map(movie => movie[0]?.title)
       console.log("All TMDB Results:", tmdbResults);
-      dispatch(addGptMovieResults(tmdbResults));
+      dispatch(addGptMovieResults({movieNames : gptMovies , movieResults : tmdbResults}));
     } catch (error) {
       console.error("Error during GPT search:", error);
     }
