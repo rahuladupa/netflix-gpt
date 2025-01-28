@@ -22,4 +22,3 @@ export const SUPPORTED_LANG = [
 ];
 
 export const OPEN_API_KEY = process.env.REACT_APP_OPEN_API_KEY;
-// export const OPEN_API_KEY = "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"
