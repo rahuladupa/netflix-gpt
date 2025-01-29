@@ -83,14 +83,14 @@ const Login = () => {
       <Header />
       <div className="absolute  bg-opacity-80 ">
         <img
-          className=" brightness-50"
+          className="h-screen w-screen object-cover brightness-50"
           src={BANNER_IMG}
           alt="netflix_banner"
         />
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
-        className=" rounded-md absolute bg-black w-3/12 p-12 my-36 mx-auto right-0 left-0 text-white bg-opacity-70 "
+        className=" rounded-md absolute bg-black md:w-3/12 p-12 my-36 mx-auto right-0 left-0 text-white bg-opacity-70 "
       >
         <h1 className="text-3xl font-bold py-4">
           {isSignInForm ? "Sign In" : "Sign Up"}

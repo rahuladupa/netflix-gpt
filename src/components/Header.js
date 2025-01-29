@@ -51,8 +51,8 @@ const Header = () => {
   }
 
   return (
-    <div className=" w-full absolute px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
-      <img className="w-40" src={LOGO} alt="logo" />
+    <div className=" w-full absolute px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between ">
+      <img className="w-40 mx-auto md:-mx-0" src={LOGO} alt="logo" />
       {user && (
         <div className="flex p-2">
           {showGptSearch && <select onChange={handleLanguageChange} className="p-2 bg-gray-700 text-white rounded-lg">
